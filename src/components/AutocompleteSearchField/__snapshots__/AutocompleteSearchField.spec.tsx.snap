@@ -1,0 +1,521 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AutocompleteSearchField [common] example testing should match snapshot(s) for Asynchronous 1`] = `
+<section>
+  <div
+    class="lucid-AutocompleteSearchField"
+  >
+    <div
+      class="lucid-DropMenu lucid-DropMenu-base lucid-AutocompleteSearchField-DropMenu lucid-AutocompleteSearchField-DropMenu-is-small"
+    >
+      <span
+        class="lucid-ContextMenu"
+      >
+        <div
+          class="lucid-DropMenu-Control"
+          tabindex="0"
+        >
+          <div
+            class="lucid-SearchField lucid-AutocompleteSearchField-search"
+          >
+            <input
+              autocomplete="off"
+              class="lucid-TextField lucid-TextField-is-single-line"
+              placeholder="Type here to simulate an API backed search"
+              rows="5"
+              type="text"
+              value=""
+            />
+            <div
+              class="lucid-SearchField-Icon-container"
+            >
+              <svg
+                class="lucid-Icon lucid-Icon-color-primary lucid-SearchIcon lucid-SearchField-Icon"
+                height="12"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+                width="12"
+              >
+                <circle
+                  cx="6"
+                  cy="6"
+                  r="5.5"
+                />
+                <path
+                  d="M15.5 15.5L9.876 9.876"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`AutocompleteSearchField [common] example testing should match snapshot(s) for Default 1`] = `
+<section>
+  <div
+    class="lucid-AutocompleteSearchField"
+    style="max-width:200px"
+  >
+    <div
+      class="lucid-DropMenu lucid-DropMenu-base lucid-AutocompleteSearchField-DropMenu lucid-AutocompleteSearchField-DropMenu-is-small"
+    >
+      <span
+        class="lucid-ContextMenu"
+      >
+        <div
+          class="lucid-DropMenu-Control"
+          tabindex="0"
+        >
+          <div
+            class="lucid-SearchField lucid-AutocompleteSearchField-search"
+          >
+            <input
+              autocomplete="off"
+              class="lucid-TextField lucid-TextField-is-single-line"
+              placeholder="Search State"
+              rows="5"
+              type="text"
+              value=""
+            />
+            <div
+              class="lucid-SearchField-Icon-container"
+            >
+              <svg
+                class="lucid-Icon lucid-Icon-color-primary lucid-SearchIcon lucid-SearchField-Icon"
+                height="12"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+                width="12"
+              >
+                <circle
+                  cx="6"
+                  cy="6"
+                  r="5.5"
+                />
+                <path
+                  d="M15.5 15.5L9.876 9.876"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`AutocompleteSearchField [common] example testing should match snapshot(s) for FormattedOptions 1`] = `
+<section>
+  <div
+    class="lucid-AutocompleteSearchField"
+    style="max-width:200px"
+  >
+    <div
+      class="lucid-DropMenu lucid-DropMenu-base lucid-AutocompleteSearchField-DropMenu lucid-AutocompleteSearchField-DropMenu-is-small"
+    >
+      <span
+        class="lucid-ContextMenu"
+      >
+        <div
+          class="lucid-DropMenu-Control"
+          tabindex="0"
+        >
+          <div
+            class="lucid-SearchField lucid-AutocompleteSearchField-search"
+          >
+            <input
+              autocomplete="off"
+              class="lucid-TextField lucid-TextField-is-single-line"
+              placeholder="Search Options"
+              rows="5"
+              type="text"
+              value=""
+            />
+            <div
+              class="lucid-SearchField-Icon-container"
+            >
+              <svg
+                class="lucid-Icon lucid-Icon-color-primary lucid-SearchIcon lucid-SearchField-Icon"
+                height="12"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+                width="12"
+              >
+                <circle
+                  cx="6"
+                  cy="6"
+                  r="5.5"
+                />
+                <path
+                  d="M15.5 15.5L9.876 9.876"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`AutocompleteSearchField [common] example testing should match snapshot(s) for GroupedOptions 1`] = `
+<section>
+  <div
+    class="lucid-AutocompleteSearchField"
+    style="max-width:200px"
+  >
+    <div
+      class="lucid-DropMenu lucid-DropMenu-base lucid-AutocompleteSearchField-DropMenu lucid-AutocompleteSearchField-DropMenu-is-small"
+    >
+      <span
+        class="lucid-ContextMenu"
+      >
+        <div
+          class="lucid-DropMenu-Control"
+          tabindex="0"
+        >
+          <div
+            class="lucid-SearchField lucid-AutocompleteSearchField-search"
+          >
+            <input
+              autocomplete="off"
+              class="lucid-TextField lucid-TextField-is-single-line"
+              rows="5"
+              type="text"
+              value=""
+            />
+            <div
+              class="lucid-SearchField-Icon-container"
+            >
+              <svg
+                class="lucid-Icon lucid-Icon-color-primary lucid-SearchIcon lucid-SearchField-Icon"
+                height="12"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+                width="12"
+              >
+                <circle
+                  cx="6"
+                  cy="6"
+                  r="5.5"
+                />
+                <path
+                  d="M15.5 15.5L9.876 9.876"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`AutocompleteSearchField [common] example testing should match snapshot(s) for InvalidOption 1`] = `
+<div
+  class="lucid-AutocompleteSearchField"
+>
+  <div
+    class="lucid-DropMenu lucid-DropMenu-base lucid-AutocompleteSearchField-DropMenu lucid-AutocompleteSearchField-DropMenu-is-small"
+  >
+    <span
+      class="lucid-ContextMenu"
+    >
+      <div
+        class="lucid-DropMenu-Control"
+        tabindex="0"
+      >
+        <div
+          class="lucid-SearchField lucid-AutocompleteSearchField-search lucid-AutocompleteSearchField-search-is-error"
+        >
+          <input
+            autocomplete="off"
+            class="lucid-TextField lucid-TextField-is-single-line"
+            rows="5"
+            type="text"
+            value=""
+          />
+          <div
+            class="lucid-SearchField-Icon-container"
+          >
+            <svg
+              class="lucid-Icon lucid-Icon-color-primary lucid-SearchIcon lucid-SearchField-Icon"
+              height="12"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 16 16"
+              width="12"
+            >
+              <circle
+                cx="6"
+                cy="6"
+                r="5.5"
+              />
+              <path
+                d="M15.5 15.5L9.876 9.876"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </span>
+  </div>
+  <div
+    class="lucid-AutocompleteSearchField-error-content"
+  >
+    Please Choose Green
+  </div>
+</div>
+`;
+
+exports[`AutocompleteSearchField [common] example testing should match snapshot(s) for Props 1`] = `
+<section>
+  <h5>
+    Loading
+  </h5>
+  <div
+    class="lucid-AutocompleteSearchField"
+  >
+    <div
+      class="lucid-DropMenu lucid-DropMenu-base lucid-AutocompleteSearchField-DropMenu lucid-AutocompleteSearchField-DropMenu-is-small"
+    >
+      <span
+        class="lucid-ContextMenu"
+      >
+        <div
+          class="lucid-DropMenu-Control"
+          tabindex="0"
+        >
+          <div
+            class="lucid-SearchField lucid-AutocompleteSearchField-search"
+          >
+            <input
+              autocomplete="off"
+              class="lucid-TextField lucid-TextField-is-single-line"
+              placeholder=""
+              rows="5"
+              type="text"
+              value=""
+            />
+            <div
+              class="lucid-SearchField-Icon-container"
+            >
+              <svg
+                class="lucid-Icon lucid-Icon-color-primary lucid-SearchIcon lucid-SearchField-Icon"
+                height="12"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+                width="12"
+              >
+                <circle
+                  cx="6"
+                  cy="6"
+                  r="5.5"
+                />
+                <path
+                  d="M15.5 15.5L9.876 9.876"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+  <h5>
+    Disabled
+  </h5>
+  <div
+    class="lucid-AutocompleteSearchField"
+  >
+    <div
+      class="lucid-DropMenu lucid-DropMenu-base lucid-AutocompleteSearchField-DropMenu lucid-AutocompleteSearchField-DropMenu-is-small"
+    >
+      <span
+        class="lucid-ContextMenu"
+      >
+        <div
+          class="lucid-DropMenu-Control"
+        >
+          <div
+            class="lucid-SearchField lucid-AutocompleteSearchField-search"
+          >
+            <input
+              autocomplete="off"
+              class="lucid-TextField lucid-TextField-is-disabled lucid-TextField-is-single-line"
+              disabled=""
+              placeholder=""
+              rows="5"
+              type="text"
+              value=""
+            />
+            <div
+              class="lucid-SearchField-Icon-container lucid-SearchField-Icon-is-disabled"
+            >
+              <svg
+                class="lucid-Icon lucid-Icon-color-primary lucid-SearchIcon lucid-SearchField-Icon"
+                height="12"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+                width="12"
+              >
+                <circle
+                  cx="6"
+                  cy="6"
+                  r="5.5"
+                />
+                <path
+                  d="M15.5 15.5L9.876 9.876"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`AutocompleteSearchField [common] example testing should match snapshot(s) for SelectedOption 1`] = `
+<section>
+  <div
+    class="lucid-AutocompleteSearchField"
+    style="max-width:200px"
+  >
+    <div
+      class="lucid-DropMenu lucid-DropMenu-base lucid-AutocompleteSearchField-DropMenu lucid-AutocompleteSearchField-DropMenu-is-small"
+    >
+      <span
+        class="lucid-ContextMenu"
+      >
+        <div
+          class="lucid-DropMenu-Control"
+          tabindex="0"
+        >
+          <div
+            class="lucid-SearchField lucid-AutocompleteSearchField-search"
+          >
+            <input
+              autocomplete="off"
+              class="lucid-TextField lucid-TextField-is-single-line"
+              placeholder="Search Color"
+              rows="5"
+              type="text"
+              value=""
+            />
+            <div
+              class="lucid-SearchField-Icon-container"
+            >
+              <svg
+                class="lucid-Icon lucid-Icon-color-primary lucid-SearchIcon lucid-SearchField-Icon"
+                height="12"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 16 16"
+                width="12"
+              >
+                <circle
+                  cx="6"
+                  cy="6"
+                  r="5.5"
+                />
+                <path
+                  d="M15.5 15.5L9.876 9.876"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </span>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`AutocompleteSearchField custom formatting should render Option child function by passing in {searchText}, setting filterText on each option and using a custom optionFilter 1`] = `
+<div
+  className="lucid-AutocompleteSearchField"
+>
+  <DropMenu
+    ContextMenu={
+      Object {
+        "alignmentOffset": -13,
+        "directonOffset": -1,
+        "minWidthOffset": -28,
+      }
+    }
+    alignment="start"
+    className="lucid-AutocompleteSearchField-DropMenu lucid-AutocompleteSearchField-DropMenu-is-small"
+    direction="down"
+    flyOutStyle={
+      Object {
+        "maxHeight": "18em",
+      }
+    }
+    focusedIndex={null}
+    isDisabled={false}
+    isExpanded={false}
+    onCollapse={[Function]}
+    onExpand={[Function]}
+    onFocusNext={[Function]}
+    onFocusOption={[Function]}
+    onFocusPrev={[Function]}
+    onSelect={[Function]}
+    optionContainerStyle={Object {}}
+    portalId=""
+    selectedIndices={null}
+  >
+    <DropMenu.Control>
+      <SearchField
+        autoComplete="off"
+        className="lucid-AutocompleteSearchField-search"
+        debounceLevel={500}
+        isDisabled={false}
+        onChange={[Function]}
+        onChangeDebounced={[Function]}
+        onSubmit={[Function]}
+        value="tion"
+      />
+    </DropMenu.Control>
+    <DropMenu.Option
+      isDisabled={false}
+      isHidden={false}
+      isWrapped={true}
+      key="AutocompleteSearchFieldOption0"
+      name="OptionA"
+    >
+      <Component
+        searchText="tion"
+      />
+    </DropMenu.Option>
+    <DropMenu.Option
+      isDisabled={false}
+      isHidden={false}
+      isWrapped={true}
+      key="AutocompleteSearchFieldOption1"
+      name="OptionB"
+    >
+      <Component
+        searchText="tion"
+      />
+    </DropMenu.Option>
+    <DropMenu.Option
+      isDisabled={false}
+      isHidden={false}
+      isWrapped={true}
+      key="AutocompleteSearchFieldOption2"
+      name="OptionC"
+    >
+      <Component
+        searchText="tion"
+      />
+    </DropMenu.Option>
+  </DropMenu>
+</div>
+`;

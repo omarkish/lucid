@@ -3,6 +3,9 @@ import Accordion, { AccordionDumb } from './components/Accordion/Accordion';
 import Autocomplete, {
 	AutocompleteDumb,
 } from './components/Autocomplete/Autocomplete';
+import AutocompleteSearchField, {
+	AutocompleteSearchFieldDumb,
+} from './components/AutocompleteSearchField/AutocompleteSearchField';
 import ButtonGroup, {
 	ButtonGroupDumb,
 } from './components/ButtonGroup/ButtonGroup';
@@ -257,6 +260,8 @@ export {
 	AudioIcon,
 	Autocomplete,
 	AutocompleteDumb,
+	AutocompleteSearchField,
+	AutocompleteSearchFieldDumb,
 	Axis,
 	AxisLabel,
 	BackUpArrowIcon,

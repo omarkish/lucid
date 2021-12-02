@@ -1,0 +1,105 @@
+@import (reference) '../../styles/variables.less';
+@import (reference) '../../styles/mixins.less';
+
+.@{prefix}-AutocompleteSearchField {
+	// Increase specificity to minimum necessary to beat DropMenu
+	&-DropMenu&-DropMenu&-DropMenu {
+		display: block;
+	}
+
+	&-DropMenu {
+		& > .@{prefix}-DropMenu-Option {
+			padding: 0 @size-XXS;
+		}
+	}
+
+	&-DropMenu-is-small {
+		.@{prefix}-DropMenu-Option {
+			padding: 0 @size-S;
+		}
+	}
+
+	.@{prefix}-ContextMenu {
+		display: block;
+	}
+
+	&-search {
+		margin-bottom: @size-standard;
+
+		&-is-error {
+			.@{prefix}-TextField {
+				border: 2px solid @featured-color-danger;
+				border-radius: @size-standard-height / 2;
+			}
+		}
+	}
+
+	&-CheckboxLabeled.@{prefix}-CheckboxLabeled {
+		display: flex;
+		flex: 1;
+		align-items: center;
+
+		.@{prefix}-CheckboxLabeled-label {
+			margin-left: @size-XXS;
+			cursor: pointer;
+			padding-top: 0;
+		}
+	}
+
+	&-noresults {
+		color: @color-disabledText;
+		font-style: italic;
+	}
+
+	&-Option-underline-match,
+	&-Option-underline-post,
+	&-Option-underline-pre {
+		white-space: pre;
+	}
+
+	&-Option-underline-match {
+		text-decoration: underline;
+	}
+
+	&-loading {
+		justify-content: center;
+
+		&.@{prefix}-DropMenu-Option.@{prefix}-DropMenu-Option-is-focused {
+			background: none;
+		}
+	}
+
+	& &-Selection-section &-Selection-group {
+		margin-bottom: @size-XS;
+	}
+
+	&-Option-select-all {
+		border-bottom: 1px solid @color-borderColorLight;
+	}
+
+	&-error-content {
+		margin-top: -8px;
+		color: @featured-color-danger;
+		font-size: @fontSize * 0.9;
+	}
+
+	&-error-select-content {
+		margin-top: @size-XXS;
+		color: @featured-color-danger;
+		font-size: @fontSize * 0.9;
+	}
+
+	&-select-error {
+		&.@{prefix}-Selection {
+			border: 2px solid @featured-color-danger !important;
+		}
+	}
+
+	// States
+	&.@{prefix}-Selection {
+		border-color: @color-primary;
+		background-color: @color-primary-light;
+
+		// AutocompleteSearchField background color does not change on hover
+	}
+}
