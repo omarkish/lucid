@@ -189,7 +189,6 @@ export const Asynchronous = (args) => {
 	const handleSelect = (index: string, event: any) => {
 		const optionsId = get(event, 'props.callbackId', null);
 		setSelectedId(optionsId);
-		// console.log({event, index});
 	};
 
 	const handleOnSubmit = (event: any) => {

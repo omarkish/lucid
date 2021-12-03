@@ -385,15 +385,13 @@ class AutocompleteSearchField extends React.Component<
 			flattenedOptionsData,
 		} = this.state;
 		if (_.isNumber(event)) {
-			console.log('1')
 			props?.onSubmit(flattenedOptionsData[event]?.optionProps?.children ?? '')
 		} else {
-			console.log('2')
 			if (!_.isNull(event)) {
 				props.onSubmit(event);
 			}
-			return props.onSelect(null, { event, props });
 		}
+		return props.DropMenu.onCollapse;
 	};
 
 	renderUnderlinedChildren = (childText: string, searchText: string): any[] => {
