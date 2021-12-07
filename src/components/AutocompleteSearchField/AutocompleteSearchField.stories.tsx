@@ -165,10 +165,12 @@ export const Asynchronous = (args) => {
 	const [selectedId, setSelectedId] = useState<number | null>(null); // current selection
 	const [visibleIds, setVisibleIds] = useState<any[]>([]); // aka current search results
 	const [isLoading, setIsLoading] = useState<boolean>(false);
+	const [searchTerm, setSearchTerm] = useState<string>('');
 
 	const handleSearch = (searchText) => {
 		setIsLoading(true);
-
+		console.log({searchText});
+		setSearchTerm(searchText)
 		// Fake an API call
 		setTimeout(() => {
 			const searchResults = reduce(
@@ -199,7 +201,7 @@ export const Asynchronous = (args) => {
 		indexOf(visibleIds, selectedId) === -1
 			? null
 			: indexOf(visibleIds, selectedId);
-
+console.log({searchTerm})
 	return (
 		<section>
 			<AutocompleteSearchField
@@ -210,6 +212,7 @@ export const Asynchronous = (args) => {
 				onSubmit={handleOnSubmit}
 				selectedIndex={selectedIndex}
 				optionFilter={constant(true)}
+				searchText={searchTerm}
 				SearchField={{
 					placeholder: 'Type here to simulate an API backed search',
 				}}

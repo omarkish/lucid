@@ -129,14 +129,6 @@ export interface IAutocompleteSearchFieldPropsRaw extends StandardProps {
 
 	onSearch: (
 		searchText: string,
-		firstVisibleIndex: number | null,
-		{
-			props,
-			event,
-		}: {
-			props: IDropMenuOptionProps;
-			event: React.KeyboardEvent | React.MouseEvent;
-		}
 	) => void;
 
 	optionFilter: (searchValue: string, props: any) => boolean;
@@ -371,10 +363,7 @@ class AutocompleteSearchField extends React.Component<
 		// is typing
 		const dropMenuProps = this.props.DropMenu;
 		onExpand && onExpand({ event, props: dropMenuProps });
-		return onSearch(searchText, firstVisibleIndex, {
-			event,
-			props: firstVisibleProps,
-		});
+		return onSearch(searchText);
 	};
 
 	handleSubmit = (event): void => {
@@ -385,13 +374,15 @@ class AutocompleteSearchField extends React.Component<
 			flattenedOptionsData,
 		} = this.state;
 		if (_.isNumber(event)) {
-			props?.onSubmit(flattenedOptionsData[event]?.optionProps?.children ?? '')
+			const value = flattenedOptionsData[event]?.optionProps?.children ?? '';
+			props?.onSubmit(value)
+			props.onSearch(value)
 		} else {
 			if (!_.isNull(event)) {
 				props.onSubmit(event);
 			}
 		}
-		return props.DropMenu.onCollapse;
+		props.DropMenu.onCollapse();
 	};
 
 	renderUnderlinedChildren = (childText: string, searchText: string): any[] => {
@@ -513,7 +504,7 @@ class AutocompleteSearchField extends React.Component<
 		const dropMenuProps = this.props.DropMenu;
 		this.props.DropMenu.onCollapse &&
 			this.props.DropMenu.onCollapse({ event, props: dropMenuProps });
-		this.props.onSearch('', null, { event, props });
+		this.props.onSearch('');
 		this.props.onSelect(null, { event, props });
 	};
 
@@ -540,6 +531,9 @@ class AutocompleteSearchField extends React.Component<
 			'props',
 			{}
 		);
+
+		console.log({searchFieldProps})
+//		searchFieldProps.value = searchText;
 
 		const errorChildProps = _.first(
 			_.map(findTypes(props, Validation.Error), 'props')
@@ -591,7 +585,9 @@ class AutocompleteSearchField extends React.Component<
 				</div>
 			);
 		}
+console.log({searchText})
 
+		console.log('searchfieldprops: ', _.omit(searchFieldProps, 'value'))
 		return (
 			<div
 				{...omitProps(
@@ -625,8 +621,9 @@ class AutocompleteSearchField extends React.Component<
 					}}
 				>
 					<DropMenu.Control>
+						foo:{searchText}
 						<SearchField
-							{...searchFieldProps}
+							{..._.omit(searchFieldProps, ['value', 'debounceLevel'])}
 							autoComplete={searchFieldProps.autoComplete || 'off'}
 							isDisabled={isDisabled}
 							className={cx(
